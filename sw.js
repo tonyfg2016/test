@@ -20,7 +20,7 @@ self.addEventListener('push', function(event) {
 self.addEventListener('notificationclick', function(event) {
     console.log('Notification click: tag ', event.notification.tag);
     event.notification.close();
-    var url = 'https://tonyfg2016.github.io/test/index.html';
+    var url = 'https://tonyfg2016.github.io/test/click.html';
     event.waitUntil(
         clients.matchAll({
             type: 'window'
