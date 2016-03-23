@@ -10,8 +10,6 @@ self.addEventListener('push', function(event) {
   console.log('Push message', event);
   var title = 'Hello all';
   
-  console.log('Push message', event.data.json());
-  
   event.waitUntil(
     self.registration.showNotification(title, {
       body: 'Push received',
